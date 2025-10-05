@@ -39,15 +39,21 @@ pip install -r requirements.txt
 
 3. Set up environment variables in a .env file
 
-4. Start Celery Worker
+  GEMINI_API_KEY=xyz
 
-  celery -A main.celery_app worker --loglevel=info
+4. Run
 
-5. Run FastAPI with Uvicorn
+  python embeddings.py
+
+5. Start Celery Worker
+
+  celery -A tasks.celery_app worker --loglevel=info
+
+6. Run FastAPI with Uvicorn
 
   uvicorn main:app --reload
 
-6. Go to http://127.0.0.1:8000.docs for Swagger UI, there you will find
+7. Go to http://127.0.0.1:8000/docs for Swagger UI, there you will find
 
   POST /register – Register a new user
 

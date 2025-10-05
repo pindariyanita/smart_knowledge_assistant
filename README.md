@@ -30,7 +30,7 @@ A FastAPI-based AI-powered knowledge assistant that allows users to upload docum
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/smart-knowledge-assistant.git
+git clone https://github.com/pindariyanita/smart_knowledge_assistant.git
 cd smart-knowledge-assistant
 
 2. Install dependencies

@@ -1,5 +1,3 @@
-# smart_knowledge_assistant
-
 # Smart Knowledge Assistant
 
 A FastAPI-based AI-powered knowledge assistant that allows users to upload documents, process them into embeddings, and ask questions to retrieve relevant information using a vector store. Integrates Celery for asynchronous processing and supports Google Gemini API for text generation.
@@ -23,7 +21,7 @@ A FastAPI-based AI-powered knowledge assistant that allows users to upload docum
 - **Asynchronous Processing:** Celery, Redis
 - **Embeddings & Vector Store:** LangChain, FAISS
 - **AI Model:** Google Gemini API
-- **Python Libraries:** pandas, PyPDF2, python-dotenv, redis, kombu, anyio, pickle
+- **Python Libraries:** PyPDF2, python-dotenv, redis, google-generativeai and many more
 
 ---
 

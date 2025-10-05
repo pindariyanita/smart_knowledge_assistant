@@ -34,6 +34,8 @@ def login(form: OAuth2PasswordRequestForm = Depends()):
 def upload_file(file: UploadFile, user=Depends(auth.get_current_user)):
     if not file.filename.endswith((".pdf", ".txt", ".md")):
         raise HTTPException(status_code=400, detail="Invalid format")
+    
+    os.makedirs("uploads", exist_ok=True)
     path = os.path.join("uploads", f"temp_{file.filename}")
     with open(path, "wb") as f:
         f.write(file.file.read())
